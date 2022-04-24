@@ -1,0 +1,8 @@
+@import "../../Styles/colors";
+@import "../../Styles/fonts";
+
+li {
+    background-color: $White;
+    padding: 0.25rem 1rem;
+    border-bottom: rgba($color: $Grey, $alpha: 0.25) solid 1px;
+}

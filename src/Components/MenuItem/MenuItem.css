@@ -1,0 +1,28 @@
+body {
+  color: #0B0A07;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+li {
+  background-color: #EBF5EE;
+  padding: 0.25rem 1rem;
+  border-bottom: rgba(88, 111, 107, 0.25) solid 1px;
+}/*# sourceMappingURL=MenuItem.css.map */
