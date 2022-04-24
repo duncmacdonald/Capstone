@@ -1,0 +1,39 @@
+body {
+  color: #0B0A07;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+.Rating {
+  height: 1.5rem;
+  width: 2rem;
+  background-color: #34AD6C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+.Rating h2 {
+  color: #EBF5EE;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=Rating.css.map */

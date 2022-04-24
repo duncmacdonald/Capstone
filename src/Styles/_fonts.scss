@@ -1,0 +1,23 @@
+@import "_colors.scss";
+
+body{
+    color: $Black;
+    padding: 0;
+}
+h1{
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h3{
+    font-size: 0.75rem;
+    color: $Grey;
+}
+
+p{
+    font-size: 0.75rem;
+    color: $Grey; 
+}
