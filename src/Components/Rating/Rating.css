@@ -21,6 +21,10 @@ p {
   color: #586F6B;
 }
 
+a {
+  text-decoration: none;
+}
+
 .Rating {
   height: 1.5rem;
   width: 2rem;
@@ -31,7 +35,7 @@ p {
   border-radius: 0.5rem;
 }
 .Rating h2 {
-  color: #EBF5EE;
+  color: #FFFFFF;
   font-size: 0.875rem;
   line-height: 0.875rem;
   padding: 0;

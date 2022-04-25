@@ -4,7 +4,7 @@
 
 .RestaurantCard {
   height: 15.6rem;
-  margin: 1rem;
+  margin: 1rem 0rem;
   position: relative;
   border-radius: 0.5rem;
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 2px 0px;
@@ -18,8 +18,6 @@
       display: flex;
       flex-direction: row;
       height: 9rem;
-      margin-left: 3rem;
-      margin-right: 3rem;
   }
 
 

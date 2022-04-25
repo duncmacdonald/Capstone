@@ -1,0 +1,7 @@
+@import "./Styles/_fonts";
+@import "./Styles/breakpoints";
+@import "./Styles/colors";
+
+body{
+    background-color: rgba($color: $Grey, $alpha: 0.1);
+}

@@ -1,3 +1,30 @@
-body{
-    background-color: #99E7FF;
+body {
+  color: #0B0A07;
+  padding: 0;
 }
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(88, 111, 107, 0.1);
+}/*# sourceMappingURL=App.css.map */

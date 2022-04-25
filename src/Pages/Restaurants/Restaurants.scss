@@ -1,0 +1,13 @@
+@import "../../Styles/_fonts";
+@import "../../Styles/breakpoints";
+@import "../../Styles/colors";
+
+.RestaurantsNearYou{
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include desktop{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}

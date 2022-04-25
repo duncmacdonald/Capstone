@@ -21,9 +21,13 @@ p {
   color: #586F6B;
 }
 
+a {
+  text-decoration: none;
+}
+
 .RestaurantCard {
   height: 15.6rem;
-  margin: 1rem;
+  margin: 1rem 0rem;
   position: relative;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
@@ -31,15 +35,13 @@ p {
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 0.25s;
-  background-color: #EBF5EE;
+  background-color: #FFFFFF;
 }
 @media (min-width: 900px) {
   .RestaurantCard {
     display: flex;
     flex-direction: row;
     height: 9rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
   }
 }
 .RestaurantCard:hover, .RestaurantCard:active {
@@ -60,7 +62,7 @@ p {
     height: 100%;
     padding-bottom: 0;
     padding-right: 0;
-    border: #EBF5EE solid 0.25rem;
+    border: #FFFFFF solid 0.25rem;
   }
 }
 .RestaurantCard__Lower {
@@ -88,7 +90,7 @@ p {
   width: 3.25rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border: #EBF5EE solid 3px;
+  border: #FFFFFF solid 3px;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
 }

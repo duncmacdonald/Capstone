@@ -25,8 +25,13 @@ a {
   text-decoration: none;
 }
 
-li {
-  background-color: #FFFFFF;
-  padding: 0.25rem 1rem;
-  border-bottom: rgba(88, 111, 107, 0.25) solid 1px;
-}/*# sourceMappingURL=MenuItem.css.map */
+.RestaurantsNearYou {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 900px) {
+  .RestaurantsNearYou {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}/*# sourceMappingURL=Restaurants.css.map */
