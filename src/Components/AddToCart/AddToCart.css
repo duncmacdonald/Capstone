@@ -1,0 +1,74 @@
+body {
+  color: #0B0A07;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(235, 245, 238, 0.7);
+}
+
+.AddToCart {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #EBF5EE;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 3px 0px;
+}
+.AddToCart__Top {
+  padding: 1rem 1rem 0;
+  border-radius: 0.5rem;
+}
+.AddToCart__Top p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.AddToCart h1 {
+  padding-left: 0;
+}
+.AddToCart__Quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  border-top: #586F6B solid 1px;
+}
+.AddToCart__Quantity > * {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.AddToCart__FooterButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #34AD6C;
+  padding: 0.5rem 2rem;
+}
+.AddToCart__FooterButton .narrow {
+  width: 3.7rem;
+  text-align: end;
+}/*# sourceMappingURL=AddToCart.css.map */

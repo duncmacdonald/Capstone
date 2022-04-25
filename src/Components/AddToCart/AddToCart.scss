@@ -1,0 +1,64 @@
+@import "../../Styles/colors";
+@import "../../Styles/fonts";
+@import "../../Styles/breakpoints";
+
+.overlay{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color: $White, $alpha: 0.7);
+}
+
+.AddToCart{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $White;
+    border-radius: 0.5rem;
+    box-shadow: rgb(0 0 0 / 20%) 0px -2px 3px 0px;
+    
+    &__Top{
+        padding: 1rem 1rem 0;
+        border-radius: 0.5rem;
+
+        p{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+    }
+
+    h1{
+        padding-left: 0;
+    }
+
+    &__Quantity{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem 1rem;
+        border-top: $Grey solid 1px;
+        
+
+        > * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    &__FooterButton{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $Primary;
+        padding: 0.5rem 2rem;
+
+        .narrow{
+            width: 3.7rem;
+            text-align: end;
+        }
+    }
+}
