@@ -69,8 +69,11 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #34AD6C;
+  background-color: #586F6B;
   padding: 0.5rem 2rem;
+}
+.AddToCart__FooterButton > * {
+  color: #FFFFFF;
 }
 .AddToCart__FooterButton .narrow {
   width: 3.7rem;

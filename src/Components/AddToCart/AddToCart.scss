@@ -53,9 +53,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: $Primary;
+        background-color: $Grey;
         padding: 0.5rem 2rem;
 
+        > * {
+            color: $White;
+        }
         .narrow{
             width: 3.7rem;
             text-align: end;

@@ -1,0 +1,43 @@
+body {
+  color: #0B0A07;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Account {
+  margin: 1rem;
+}
+.Account section {
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.Account section h1 {
+  margin: 0;
+  line-height: 1rem;
+}
+.Account section p {
+  margin-bottom: 0;
+}/*# sourceMappingURL=Account.css.map */

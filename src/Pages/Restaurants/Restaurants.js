@@ -1,32 +1,31 @@
 import React from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 import RestaurantCard from "../../Components/RestaurantCard/RestaurantCard";
-import logo from "../../Assets/RestaurantImages/yuko-maki-logo.png";
-import hero from "../../Assets/RestaurantImages/yuko-maki-menu-image-large.jpg";
-import "./Restaurants.css"
+import "./Restaurants.css";
+
+
+const URL = "http://localhost:3333/";
 
 export default class Restaurants extends React.Component {
   state = {
-    logo: logo,
-    hero: hero,
-    name: "Yuko Maki",
-    address: "1540 Lonsdale Avenue",
-    rating: "9.8",
+    restaurants: [],
   };
 
+  componentDidMount() {
+    axios.get(`${URL}restaurants/`).then((response) => this.setState({restaurants: response.data}));
+  }
+
+
   render() {
+
+    let restaurantsJSX = (this.state.restaurants.length > 0) ? this.state.restaurants.map(restaurant => {return (<Link key={restaurant.id + Date.now()}to={`/restaurant/${restaurant.id}`}><RestaurantCard name={restaurant.name} logo={restaurant.logo} hero={restaurant.hero} address={restaurant.address} rating={"9.6"}/></Link>)}) : <></>;
+
     return (
       <section className="RestaurantsNearYou">
         <h1>Restaurants Near You</h1>
-        <RestaurantCard
-          hero={this.state.hero}
-          logo={this.state.logo}
-          name={this.state.name}
-          address={this.state.address}
-          rating={this.state.rating}
-        />
-
+        {restaurantsJSX}
       </section>
-
     );
   }
 }

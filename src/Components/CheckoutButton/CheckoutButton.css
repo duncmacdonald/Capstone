@@ -1,0 +1,45 @@
+body {
+  color: #0B0A07;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+a {
+  text-decoration: none;
+}
+
+.CheckoutButton {
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #34AD6C;
+  padding: 0.5rem 2rem;
+}
+.CheckoutButton > * {
+  color: #FFFFFF;
+}
+.CheckoutButton .narrow {
+  width: 3.7rem;
+  text-align: end;
+}/*# sourceMappingURL=CheckoutButton.css.map */

@@ -105,6 +105,7 @@ a {
 }
 .RestaurantCard__Lower h1 {
   margin-top: 0.25rem;
+  color: #0B0A07;
 }
 @media (min-width: 900px) {
   .RestaurantCard__Lower h1 {

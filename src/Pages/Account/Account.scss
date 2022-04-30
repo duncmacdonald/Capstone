@@ -1,0 +1,24 @@
+@import "../../Styles/_fonts";
+@import "../../Styles/breakpoints";
+@import "../../Styles/colors";
+
+.Account{
+    margin: 1rem;
+
+    section{
+        background-color: $White;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        
+        h1{
+            margin: 0;
+            line-height: 1rem;
+        }
+
+        p{
+            margin-bottom: 0;
+        }
+        
+    }
+}
