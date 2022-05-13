@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Do The Dishes
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project requires https://github.com/duncmacdonald/Duncan-Macdonald-Capstone-Server to be running and should only require
+
+### `npm ci`
+### `npm start`
+
+
 
 ## Available Scripts
 
