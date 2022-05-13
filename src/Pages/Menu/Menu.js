@@ -60,14 +60,14 @@ export default class Menu extends React.Component {
             "cart",
             JSON.stringify([
               ...JSON.parse(sessionStorage.getItem("cart")),
-              { itemId: this.state.choice, quantity: this.state.quantity },
+              { itemId: this.state.choice.id, quantity: this.state.quantity },
             ])
           );
         } else {
           sessionStorage.setItem(
             "cart",
             JSON.stringify([
-              { itemId: this.state.choice, quantity: this.state.quantity },
+              { itemId: this.state.choice.id, quantity: this.state.quantity },
             ])
           );
         }
@@ -99,7 +99,7 @@ export default class Menu extends React.Component {
           <></>
         )}
         {this.state.checkout > 0 && this.state.choice === "none" ? (
-          <Link to="/checkout"><CheckoutButton itemCount={this.state.checkout} /></Link>
+          <Link to="/checkout"><CheckoutButton itemCount={this.state.checkout} listener={(id) =>{console.log(id)}}/></Link>
         ) : (
           <></>
         )}

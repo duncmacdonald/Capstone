@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 // import "./styles.css";
 import QRCodeStyling from "qr-code-styling";
+import returnCode from "../../Assets/return.png";
+import "./QRCode.css";
 
 const qrCode = new QRCodeStyling({
   width: 300,
@@ -17,7 +19,7 @@ const qrCode = new QRCodeStyling({
   }
 });
 
-export default function QRCode() {
+export default function QRCode({listener}) {
     // state= {
     //     url: "https://qr-code-styling.com"
     // }
@@ -52,18 +54,21 @@ export default function QRCode() {
   };
 
   return (
-    <div className="App">
-      <div style={styles.inputWrapper}>
-        <input value={url} onChange={onUrlChange} style={styles.inputBox} />
-        <select onChange={onExtensionChange} value={fileExt}>
-          <option value="png">PNG</option>
-          <option value="jpeg">JPEG</option>
-          <option value="webp">WEBP</option>
-        </select>
-        <button onClick={onDownloadClick}>Download</button>
-      </div>
-      {/* <div ref={ref} /> */}
+    <div className="QRCode">
+      <img src={returnCode} alt="Scannable order code" onClick={() => listener()}></img>
     </div>
+    // <div className="App">
+    //   <div style={styles.inputWrapper}>
+    //     <input value={url} onChange={onUrlChange} style={styles.inputBox} />
+    //     <select onChange={onExtensionChange} value={fileExt}>
+    //       <option value="png">PNG</option>
+    //       <option value="jpeg">JPEG</option>
+    //       <option value="webp">WEBP</option>
+    //     </select>
+    //     <button onClick={onDownloadClick}>Download</button>
+    //   </div>
+    //   {/* <div ref={ref} /> */}
+    // </div>
   );
 }
 

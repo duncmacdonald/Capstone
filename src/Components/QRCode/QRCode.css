@@ -1,0 +1,15 @@
+.QRCode {
+  text-align: center;
+  padding-top: 4rem;
+}
+.QRCode img {
+  border-radius: 0.5rem;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
+  cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 0.25s;
+}
+.QRCode img:hover, .QRCode img:active {
+  box-shadow: rgba(23, 32, 38, 0.4) 2px 3px 3px 0px;
+}/*# sourceMappingURL=QRCode.css.map */

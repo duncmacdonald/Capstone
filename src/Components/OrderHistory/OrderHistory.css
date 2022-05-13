@@ -1,0 +1,49 @@
+body {
+  color: #0B0A07;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #586F6B;
+}
+
+a {
+  text-decoration: none;
+}
+
+.OrderHistory__Table {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.OrderHistory p {
+  margin: 0;
+}
+.OrderHistory .Button {
+  background-color: #34AD6C;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
+  cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 0.25s;
+}
+.OrderHistory .Button:hover, .OrderHistory .Button:active {
+  box-shadow: rgba(23, 32, 38, 0.4) 2px 3px 3px 0px;
+}/*# sourceMappingURL=OrderHistory.css.map */
