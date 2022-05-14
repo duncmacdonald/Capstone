@@ -1,3 +1,12 @@
+# Do The Dishes
+BrainStation capstone project. Requires https://github.com/duncmacdonald/Duncan-Macdonald-Capstone-Server
+
+### npm ci
+### npm start
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
