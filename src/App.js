@@ -6,6 +6,7 @@ import Header from "./Components/Header/Header";
 import Account from "./Pages/Account/Account";
 import Checkout from "./Pages/Checkout/Checkout";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import Returns from "./Pages/Returns/Returns";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/restaurant/:restaurantId" component={Menu} />
           <Route path="/account" component={Account} />
           <Route path="/checkout" component={Checkout} />
+          <Route path="/returns/:id" component={Returns} />
           <Redirect to="/" />
         </Switch>
       </Router>

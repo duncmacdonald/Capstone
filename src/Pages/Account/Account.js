@@ -19,7 +19,7 @@ export default class Account extends React.Component {
 
 
   returnListener = (id) => {
-    QRCode.toDataURL(`${URL}return/${id}`)
+    QRCode.toDataURL(`${URL}returns/${id}`)
     .then((dataurl) => {
       this.setState({ qr: dataurl, modal: true });
     })
