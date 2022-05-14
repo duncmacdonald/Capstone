@@ -1,7 +1,8 @@
 import axios from "axios";
 import React from "react";
 import OrderHistory from "../../Components/OrderHistory/OrderHistory";
-import QRCode from "../../Components/QRCode/QRCode";
+import MyQRCode from "../../Components/QRCode/MyQRCode";
+import QRCode from "qrcode";
 import "./Account.css";
 
 const URL = "http://localhost:3333/";
@@ -13,11 +14,19 @@ export default class Account extends React.Component {
     orderHistory: [],
     modal: false,
     id: "",
+    qr: "",
   };
 
+
   returnListener = (id) => {
-    console.log(id);
-    this.setState({ id: id, modal: true });
+    QRCode.toDataURL(`${URL}return/${id}`)
+    .then((dataurl) => {
+      this.setState({ qr: dataurl, modal: true });
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+    
   }
 
   QRListener = () => this.setState({ modal: false });
@@ -39,7 +48,7 @@ export default class Account extends React.Component {
         <OrderHistory orderHistory={this.state.orderHistory} listen={this.returnListener} />
       </div>
     ) : (
-      <QRCode orderId={this.state.id} listener={this.QRListener} />
+      <MyQRCode url={this.state.qr} listener={this.QRListener} />
     );
   }
 }

@@ -34,7 +34,7 @@ a {
   font-weight: 600;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 0px;
   cursor: pointer;
@@ -51,4 +51,7 @@ a {
   justify-content: space-between;
   align-items: stretch;
   border-bottom: 1px solid #586F6B;
+}
+.OrderHistory__Row > div > p {
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=OrderHistory.css.map */

@@ -10,6 +10,7 @@
         cursor: pointer;
         transition-property: box-shadow;
         transition-duration: 0.25s;
+        width: 300px;
 
         &:hover, &:active{
             box-shadow: rgb(23 32 38 / 40%) 2px 3px 3px 0px;
