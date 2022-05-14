@@ -25,16 +25,13 @@ a {
   text-decoration: none;
 }
 
-.OrderHistory__Table {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
 .OrderHistory p {
   margin: 0;
 }
 .OrderHistory .Button {
   background-color: #34AD6C;
+  color: #FFFFFF;
+  font-weight: 600;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.25rem;
@@ -46,4 +43,12 @@ a {
 }
 .OrderHistory .Button:hover, .OrderHistory .Button:active {
   box-shadow: rgba(23, 32, 38, 0.4) 2px 3px 3px 0px;
+}
+.OrderHistory__Row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 1px solid #586F6B;
 }/*# sourceMappingURL=OrderHistory.css.map */

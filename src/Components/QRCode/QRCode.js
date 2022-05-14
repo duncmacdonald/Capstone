@@ -4,11 +4,12 @@ import QRCodeStyling from "qr-code-styling";
 import returnCode from "../../Assets/return.png";
 import "./QRCode.css";
 
+const URL = "http://localhost:3333/";
+
 const qrCode = new QRCodeStyling({
   width: 300,
   height: 300,
-  image:
-    "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+  image: "",
   dotsOptions: {
     color: "#4267b2",
     type: "rounded"
@@ -19,11 +20,11 @@ const qrCode = new QRCodeStyling({
   }
 });
 
-export default function QRCode({listener}) {
+export default function QRCode({orderId, listener}) {
     // state= {
     //     url: "https://qr-code-styling.com"
     // }
-  const [url, setUrl] = useState("https://qr-code-styling.com");
+  const [url, setUrl] = useState(`${URL}return/${orderId}`);
   const [fileExt, setFileExt] = useState("png");
   const ref = useRef(null);
 

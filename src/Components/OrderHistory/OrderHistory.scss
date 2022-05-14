@@ -6,11 +6,6 @@
 
 .OrderHistory{
 
-    &__Table{
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-    }
 
 
     p{
@@ -19,6 +14,8 @@
 
     .Button{
         background-color: $Primary;
+        color: $White;
+        font-weight: 600;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 0.25rem;
@@ -30,6 +27,20 @@
 
         &:hover, &:active{
             box-shadow: rgb(23 32 38 / 40%) 2px 3px 3px 0px;
+        }
+    }
+
+    &__Row{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        border-bottom: 1px solid $Grey;
+
+
+        > div > p{
+            margin-top: 0.5rem;
         }
     }
 }

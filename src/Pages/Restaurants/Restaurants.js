@@ -13,7 +13,12 @@ export default class Restaurants extends React.Component {
   };
 
   componentDidMount() {
-    axios.get(`${URL}restaurants/`).then((response) => this.setState({restaurants: response.data}));
+    axios.get(`${URL}restaurants/`).then((response) => {
+      this.setState({restaurants: response.data});
+
+      //save restaurant data for use in checkout
+      sessionStorage.setItem('restaurants', JSON.stringify(response.data));
+      });
   }
 
 

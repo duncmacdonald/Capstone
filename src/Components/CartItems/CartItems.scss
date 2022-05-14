@@ -1,0 +1,27 @@
+
+.CartItems {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  &__Item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2rem;
+    gap: 1rem;
+
+    > :nth-child(1) {
+      flex-basis: 1;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    > :nth-child(2) {
+      flex-basis: 15;
+      flex-grow: 1;
+    }
+    > :nth-child(3) {
+      flex-basis: 1.5;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+}
