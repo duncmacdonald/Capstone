@@ -1,6 +1,6 @@
 import Rating from "../Rating/Rating";
 import "./RestaurantCard.css";
-import { DirectionsWalk, DirectionsBike } from "@mui/icons-material";
+// import { DirectionsWalk, DirectionsBike } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
 export default function RestaurantCard({ hero, logo, name, address, rating }) {
@@ -17,9 +17,9 @@ export default function RestaurantCard({ hero, logo, name, address, rating }) {
         <div className="DirectionsContainer">
           <h3>{address}</h3>
           <div className="Transportation">
-            <DirectionsWalk htmlColor="#586F6B" viewBox="-4 -4 32 32" />
+            {/* <DirectionsWalk htmlColor="#586F6B" viewBox="-4 -4 32 32" /> */}
             <p>15 min</p>
-            <DirectionsBike htmlColor="#586F6B" viewBox="-4 -4 32 32" />
+            {/* <DirectionsBike htmlColor="#586F6B" viewBox="-4 -4 32 32" /> */}
             <p>5 min</p>
           </div>
         </div>

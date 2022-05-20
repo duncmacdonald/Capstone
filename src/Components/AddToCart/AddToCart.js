@@ -1,8 +1,8 @@
-import {
-  Close,
-  AddCircleOutline,
-  RemoveCircleOutline,
-} from "@mui/icons-material";
+// import {
+//   Close,
+//   AddCircleOutline,
+//   RemoveCircleOutline,
+// } from "@mui/icons-material";
 import React from "react";
 import "./AddToCart.css";
 
@@ -11,19 +11,20 @@ export default function AddToCart({ id, name, description, quantity, price, list
     <div className="overlay">
       <div className="AddToCart">
         <div className="AddToCart__Top">
-          <Close onClick={() => listener("close")}/>
+          {/* <Close onClick={() => listener("close")}/> */}
           <h1>{name}</h1>
           <p>{description}</p>
           {/* <input type={Text}></input> */}
 
           <div className="AddToCart__Quantity">
-            {quantity <= 1 ? (
-              <RemoveCircleOutline htmlColor="#BFBFBF" />
+            {/* {quantity <= 1 ? (
+              // <RemoveCircleOutline htmlColor="#BFBFBF" />
             ) : (
-              <RemoveCircleOutline onClick={() => listener("decrement")}/>
-            )}
+              <></>
+              // <RemoveCircleOutline onClick={() => listener("decrement")}/>
+            )} */}
             <h1>{quantity}</h1>
-            <AddCircleOutline onClick={() => listener("increment")}/>
+            {/* <AddCircleOutline onClick={() => listener("increment")}/> */}
           </div>
         </div>
         <div className="AddToCart__FooterButton" onClick={() => listener("save")}>
