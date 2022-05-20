@@ -9,7 +9,7 @@ export default function OrderHistory({ orderHistory, listen}) {
           <h1>
             {(order.restaurant_id === 1) ? ("Yuko Maki") : ("Ingrain Pastifico")}
           </h1>
-          <p>{Math.round((Date.now() - order.order_time)/86400000) + 1} days ago</p>
+          <p>{Math.round((Date.now() - order.order_time)/86400000)} days ago</p>
         </div>
         {(order.status === "complete") ? (
           <div className="Button" onClick={() => listen(order.id)}>
