@@ -1,6 +1,7 @@
 import Rating from "../Rating/Rating";
 import "./RestaurantCard.css";
 import { DirectionsWalk, DirectionsBike } from "@mui/icons-material";
+import React from "react";
 import { Link } from "react-router-dom";
 export default function RestaurantCard({ hero, logo, name, address, rating }) {
   return (

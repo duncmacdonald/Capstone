@@ -1,4 +1,5 @@
 import "./CartItems.css";
+import React from "react";
 
 export default function CartItems({ data }){
     return(

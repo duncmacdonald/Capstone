@@ -1,4 +1,5 @@
 import "./MyQRCode.css";
+import React from "react";
 
 export default function MyQRCode({url, listener}){
   return(

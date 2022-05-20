@@ -3,6 +3,7 @@ import {
   AddCircleOutline,
   RemoveCircleOutline,
 } from "@mui/icons-material";
+import React from "react";
 import "./AddToCart.css";
 
 export default function AddToCart({ id, name, description, quantity, price, listener }) {

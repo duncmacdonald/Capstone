@@ -7,6 +7,7 @@ import Account from "./Pages/Account/Account";
 import Checkout from "./Pages/Checkout/Checkout";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import Returns from "./Pages/Returns/Returns";
+import React from "react";
 
 
 function App() {

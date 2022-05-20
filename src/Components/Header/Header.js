@@ -1,5 +1,6 @@
 import { FoodBank, AccountCircle } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import React from "react";
 import "./Header.css";
 
 export default function Header() {

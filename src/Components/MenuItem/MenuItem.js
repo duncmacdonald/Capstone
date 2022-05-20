@@ -1,3 +1,4 @@
+import React from "react";
 import "./MenuItem.css"
 
 export default function MenuItem({id, name, description, price, listener}){
